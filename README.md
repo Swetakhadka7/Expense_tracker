@@ -1,31 +1,33 @@
-✅ Part 1: Project Overview
-# Expense Tracker API
+# ✅ Expense Tracker API
 
 A secure RESTful API built with Django and Django REST Framework to track personal expenses and incomes.
 
 This project uses JWT-based authentication and supports multiple users — each user can view and manage only their own records, while a superuser can manage all.
 
-✅ Part 2: Tech Stack
+---
+
 ## 🚀 Tech Stack
 
-- **Backend**: Django 5, Django REST Framework
-- **Auth**: JWT (via `djangorestframework-simplejwt`)
-- **Database**: SQLite (development)
-- **Python Version**: 3.10
+- **Backend**: Django 5, Django REST Framework  
+- **Auth**: JWT (via `djangorestframework-simplejwt`)  
+- **Database**: SQLite (development)  
+- **Python Version**: 3.10  
 - **Environment Management**: `.env`
 
-✅ Part 3: Features
+---
+
 ## 🔑 Features
 
-- User registration and login via JWT
-- Authenticated CRUD for expenses and income
-- Role-based access: superuser vs. regular user
-- Tax handling: flat and percentage
-- Secure secret handling using `.env` file
-- Pagination enabled on expense list
+- User registration and login via JWT  
+- Authenticated CRUD for expenses and income  
+- Role-based access: superuser vs. regular user  
+- Tax handling: flat and percentage  
+- Secure secret handling using `.env` file  
+- Pagination enabled on expense list  
 - Admin branding customized to "Expense Tracker"
 
-✅ Part 4: Installation Instructions
+---
+
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**  
@@ -39,20 +41,23 @@ This project uses JWT-based authentication and supports multiple users — each 
 3. **Install dependencies**  
    `pip install -r requirements.txt`
 
-4. **Create .env file**  
-SECRET_KEY=your-django-secret
-DEBUG=True
+4. **Create `.env` file**
+
+   ```env
+   SECRET_KEY=your-django-secret
+   DEBUG=True
+   ```
 
 5. **Apply migrations and create a superuser**  
-`python manage.py migrate`  
-`python manage.py createsuperuser`
+   `python manage.py migrate`  
+   `python manage.py createsuperuser`
 
 6. **Run the development server**  
-`python manage.py runserver`
+   `python manage.py runserver`
 
 7. **Visit**  
-- API: `http://127.0.0.1:8000/api/expenses/`  
-- Admin Panel: `http://127.0.0.1:8000/admin/`
+   - API: `http://127.0.0.1:8000/api/expenses/`  
+   - Admin Panel: `http://127.0.0.1:8000/admin/`
 
 ---
 
@@ -79,28 +84,31 @@ DEBUG=True
 | PUT    | `/api/expenses/{id}/`    | Update an existing expense         |
 | DELETE | `/api/expenses/{id}/`    | Delete an expense                  |
 
-> 🔐 All expense routes require `Authorization: Bearer <access-token>`
+> 🔐 All expense routes require: `Authorization: Bearer <access-token>`
 
+---
 
-✅ Part 6: Expense Schema Example
-## 🧾 Expense Object
+## 🧾 Expense Object Example
 
 ```json
+// Expense Payload
 {
-"title": "Bike Servicing",
-"description": "Changed oil and cleaned brakes",
-"amount": 1500,
-"transaction_type": "debit",
-"tax": 5
+  "title": "Bike Servicing",
+  "description": "Changed oil and cleaned brakes",
+  "amount": 1500,
+  "transaction_type": "debit",
+  "tax": 5,
+  "tax_type": "percentage"
 }
 
-###Computed Response:
+// ✅ Computed Response
 {
   "id": 12,
   "title": "Bike Servicing",
   "total": 1575.0,
   "created_at": "2025-07-05T10:12:00Z"
 }
+```
 
 ---
 
@@ -118,13 +126,17 @@ DEBUG=True
 admin.site.site_header = "Expense Tracker Admin"
 admin.site.site_title = "Expense Tracker Portal"
 admin.site.index_title = "Welcome to Expense Tracker Dashboard"
+```
 
+---
 
 ## 👩‍💻 Author
 
 Sweta Khadka  
 Expense Tracker — Django  
 2025
+
+---
 
 ## 📄 License
 
