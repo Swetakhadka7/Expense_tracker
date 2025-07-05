@@ -99,7 +99,9 @@ This project uses JWT-based authentication and supports multiple users — each 
   "tax": 5,
 }
 
-###Computed Response:
+### Computed Response
+
+```json
 {
   "id": 12,
   "title": "Bike Servicing",
