@@ -29,7 +29,7 @@ This project uses JWT-based authentication and supports multiple users — each 
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**  
-   git clone https://github.com/yourusername/expense-tracker.git
+   git clone https://github.com/Swetakhadka7/Expense_tracker.git
    cd expense-tracker
 
 2. **Create and activate virtual environment**
