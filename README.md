@@ -101,7 +101,7 @@ This project uses JWT-based authentication and supports multiple users — each 
 }
 
 
-Computed Response:
+// Computed Response:
 {
   "id": 12,
   "title": "Bike Servicing",
@@ -112,7 +112,7 @@ Computed Response:
 
 ---
 
-## ✅ Part 7: Admin Panel Customization
+ ✅ Part 7: Admin Panel Customization
 
 ```markdown
 ## 🎛️ Admin Panel
@@ -129,7 +129,7 @@ admin.site.index_title = "Welcome to Expense Tracker Dashboard"
 
 
 
-## ✅ Part 8: License / Author
+ ✅ Part 8: License / Author
 
 ```markdown
 ## 👩‍💻 Author
