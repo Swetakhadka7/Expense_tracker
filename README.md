@@ -110,13 +110,26 @@ Computed Response:
 }
 
 
-
 ---
 
+## ✅ Part 7: Admin Panel Customization
 
----
+```markdown
+## 🎛️ Admin Panel
 
-## ✅ Part 7: License / Author
+- Accessible at: `/admin/`
+- Branded as **Expense Tracker Admin**
+- Superusers can manage all expenses and users
+- Custom display titles applied using:
+
+```python
+admin.site.site_header = "Expense Tracker Admin"
+admin.site.site_title = "Expense Tracker Portal"
+admin.site.index_title = "Welcome to Expense Tracker Dashboard"
+
+
+
+## ✅ Part 8: License / Author
 
 ```markdown
 ## 👩‍💻 Author
