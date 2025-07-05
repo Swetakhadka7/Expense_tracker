@@ -54,9 +54,6 @@ This project uses JWT-based authentication and supports multiple users — each 
    API: http://127.0.0.1:8000/api/expenses/
    Admin Panel: http://127.0.0.1:8000/admin/
 
-
-
-
 ---
 
 ## ✅ Part 5: API Endpoints
@@ -99,7 +96,7 @@ This project uses JWT-based authentication and supports multiple users — each 
   "tax": 5,
 }
 
-###Computed Response:
+### Computed Response:
 {
   "id": 12,
   "title": "Bike Servicing",
