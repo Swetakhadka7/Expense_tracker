@@ -91,7 +91,7 @@ This project uses JWT-based authentication and supports multiple users — each 
 ## 🧾 Expense Object Example
 
 ```json
-// Expense Payload
+ **Expense Payload**
 {
   "title": "Bike Servicing",
   "description": "Changed oil and cleaned brakes",
@@ -101,7 +101,7 @@ This project uses JWT-based authentication and supports multiple users — each 
   "tax_type": "percentage"
 }
 
-// ✅ Computed Response
+**✅ Computed Response**
 {
   "id": 12,
   "title": "Bike Servicing",
