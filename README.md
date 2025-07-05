@@ -97,11 +97,9 @@ This project uses JWT-based authentication and supports multiple users — each 
   "amount": 1500,
   "transaction_type": "debit",
   "tax": 5,
-  "tax_type": "percentage"
 }
 
-
-// Computed Response:
+###Computed Response:
 {
   "id": 12,
   "title": "Bike Servicing",
@@ -109,10 +107,9 @@ This project uses JWT-based authentication and supports multiple users — each 
   "created_at": "2025-07-05T10:12:00Z"
 }
 
-
 ---
 
- ✅ Part 7: Admin Panel Customization
+✅ Part 7: Admin Panel Customization
 
 ```markdown
 ## 🎛️ Admin Panel
@@ -128,19 +125,20 @@ admin.site.site_title = "Expense Tracker Portal"
 admin.site.index_title = "Welcome to Expense Tracker Dashboard"
 
 
-
- ✅ Part 8: License / Author
-
-```markdown
 ## 👩‍💻 Author
 
 Sweta Khadka  
-Expense tracker — Django
+Expense Tracker — Django  
 2025
 
 ## 📄 License
 
 This project is open source and available under the MIT License.
+
+
+
+
+
 
 
 
