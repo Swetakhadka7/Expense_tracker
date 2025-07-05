@@ -12,7 +12,7 @@ This project uses JWT-based authentication and supports multiple users — each 
 - **Auth**: JWT (via `djangorestframework-simplejwt`)
 - **Database**: SQLite (development)
 - **Python Version**: 3.10
-- **Environment Management**:  `.env`
+- **Environment Management**: `.env`
 
 ✅ Part 3: Features
 ## 🔑 Features
@@ -29,36 +29,34 @@ This project uses JWT-based authentication and supports multiple users — each 
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**  
-   git clone https://github.com/Swetakhadka7/Expense_tracker.git
-   cd expense-tracker
+   `git clone https://github.com/Swetakhadka7/Expense_tracker.git`  
+   `cd expense-tracker`
 
-2. **Create and activate virtual environment**
-   python -m venv env
-   .\env\Scripts\activate
+2. **Create and activate virtual environment**  
+   `python -m venv env`  
+   `.\env\Scripts\activate` (Windows) or `source env/bin/activate` (Unix)
 
-3. **Install dependencies**
-   pip install -r requirements.txt
+3. **Install dependencies**  
+   `pip install -r requirements.txt`
 
-4. **Create .env file**
-   SECRET_KEY=your-django-secret
-   DEBUG=True
+4. **Create .env file**  
+SECRET_KEY=your-django-secret
+DEBUG=True
 
-5. **Apply migrations and create a superuser**
-   python manage.py migrate
-   python manage.py createsuperuser
+5. **Apply migrations and create a superuser**  
+`python manage.py migrate`  
+`python manage.py createsuperuser`
 
-6. **Run the development server**
-   python manage.py runserver
+6. **Run the development server**  
+`python manage.py runserver`
 
-7. **Visit**
-   API: http://127.0.0.1:8000/api/expenses/
-   Admin Panel: http://127.0.0.1:8000/admin/
+7. **Visit**  
+- API: `http://127.0.0.1:8000/api/expenses/`  
+- Admin Panel: `http://127.0.0.1:8000/admin/`
 
 ---
 
-## ✅ Part 5: API Endpoints
-
-```markdown
+✅ Part 5: API Endpoints
 ## 📬 API Endpoints
 
 ### 🔐 Authentication
@@ -85,15 +83,15 @@ This project uses JWT-based authentication and supports multiple users — each 
 
 
 ✅ Part 6: Expense Schema Example
-### 🧾 Expense Object
+## 🧾 Expense Object
 
 ```json
 {
-  "title": "Bike Servicing",
-  "description": "Changed oil and cleaned brakes",
-  "amount": 1500,
-  "transaction_type": "debit",
-  "tax": 5,
+"title": "Bike Servicing",
+"description": "Changed oil and cleaned brakes",
+"amount": 1500,
+"transaction_type": "debit",
+"tax": 5
 }
 
 ###Computed Response:
